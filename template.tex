@@ -1,0 +1,70 @@
+\documentclass{endm}
+\usepackage{endmmacro}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{pdflscape}
+% disable labelindent
+\let\labelindent\relax
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{setspace} % \doublespacing
+\usepackage[utf8]{inputenc}
+% \usepackage[numbers,square]{natbib}
+% \usepackage{algorithm, algorithmic}
+\usepackage{rotating}
+\usepackage{subfigure}
+
+% tikz libraries
+\usepackage{tkz-graph}
+\usepackage{verbatim}
+\usetikzlibrary{arrows,arrows.meta,shapes,decorations.pathmorphing, decorations.markings}
+\let\svtikzpicture\tikzpicture
+\def\tikzpicture{\noindent\svtikzpicture}
+
+\def\lastname{Carvalho, Simpson}
+
+\begin{document}
+
+% DO NOT REMOVE: Creates space for Elsevier logo, ScienceDirect logo
+% and ENDM logo
+\begin{verbatim}\end{verbatim}\vspace{2.5cm}
+
+\begin{frontmatter}
+
+\title{Article title}
+
+\author{Iago A. Carvalho\thanksref{all}\thanksref{ufmg}}, and
+\author{Homer J. Simpson\thanksref{fox}}
+
+% \address[ufmg]{Computer Science Department\\ Universidade Federal de Minas Gerais\\ Belo Horizonte, Brazil.}
+% \address[ubp]{{Laboratoire LIMOS, CNRS-UMR 6158\\ Universit\'{e} Clermont Auvergne\\ Clermont-Ferrand, France.}}
+
+\thanks[all]{This study was financed in part by the \emph{Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil} (CAPES) - Finance Code 001, the \emph{Conselho Nacional de Desenvolvimento Científico e Tecnológico - Brasil} (CNPq), and the \emph{Fundação de Amparo à Pesquisa de Minas Gerais - Brasil} (FAPEMIG).}
+\thanks[ufmg]{Department of Computer Science, Universidade Federal de Minas Gerais, Av. Antônio Carlos 6627, Belo Horizonte, MG 31270-010, Brazil \\Email: \texttt{\normalshape iagoac@dcc.ufmg.br}}
+\thanks[fox]{Twenty Century Fox, Springfield, USA \\ Email:
+\texttt{\normalshape homer@thesimpsons.com}}
+
+\begin{abstract}
+There will be an abstract here.
+\end{abstract}
+
+\begin{keyword}
+Keyword 1, keyword 2, keyword 3, keyword 4, keyword 5
+\end{keyword}
+
+\end{frontmatter}
+
+\section{Introduction}\label{sec:intro}
+
+\bibliographystyle{endm}
+\bibliography{bibsample}
+
+\end{document}

@@ -29,6 +29,20 @@
 \let\svtikzpicture\tikzpicture
 \def\tikzpicture{\noindent\svtikzpicture}
 
+% personal definitions
+\newcommand{\uset}[1]{\ifmmode\left\{\,#1\,\right\}\else\{\,#1\,\}\fi}
+\newcommand{\ulst}[1]{\ifmmode\left[\,#1\,\right]\else[\,#1\,]\fi}
+\newcommand{\upar}[1]{\ifmmode\left(\,#1\,\right)\else(\,#1\,)\fi}
+\newcommand{\uioc}[1]{\ifmmode\left(\,#1\,\right]\else(\,#1\,]\fi}
+\newcommand{\uico}[1]{\ifmmode\left[\,#1\,\right)\else[\,#1\,)\fi}
+
+\newcommand{\ie}{i.\,e.,\xspace}
+\newcommand{\eg}{e.\,g.,\xspace}
+\newcommand{\false}{\texttt{false}}
+\newcommand{\true}{\texttt{true}}
+
+
+
 \def\lastname{Carvalho, Simpson}
 
 \begin{document}
@@ -41,14 +55,11 @@
 
 \title{Article title}
 
-\author{Iago A. Carvalho\thanksref{all}\thanksref{ufmg}}, and
+\author{Iago A. Carvalho\thanksref{all}\thanksref{unicamp}}, and
 \author{Homer J. Simpson\thanksref{fox}}
 
-% \address[ufmg]{Computer Science Department\\ Universidade Federal de Minas Gerais\\ Belo Horizonte, Brazil.}
-% \address[ubp]{{Laboratoire LIMOS, CNRS-UMR 6158\\ Universit\'{e} Clermont Auvergne\\ Clermont-Ferrand, France.}}
-
-\thanks[all]{This study was financed in part by the \emph{Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil} (CAPES) - Finance Code 001, the \emph{Conselho Nacional de Desenvolvimento Científico e Tecnológico - Brasil} (CNPq), and the \emph{Fundação de Amparo à Pesquisa de Minas Gerais - Brasil} (FAPEMIG).}
-\thanks[ufmg]{Department of Computer Science, Universidade Federal de Minas Gerais, Av. Antônio Carlos 6627, Belo Horizonte, MG 31270-010, Brazil \\Email: \texttt{\normalshape iagoac@dcc.ufmg.br}}
+\thanks[all]{This study was financed in part by the \emph{Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil} (CAPES) - Finance Code 001, the \emph{Conselho Nacional de Desenvolvimento Científico e Tecnológico - Brasil} (CNPq), and the \emph{Fundação de Amparo à Pesquisa do Estado de São Paulo - Brasil} (FAPESP).}
+\thanks[unicamp]{Institute of Computing, Universidade Estadual de Campinas, Av. Albert Einstein 1251, Campinas, SP 13083-852, Brazil \\Email: \texttt{\normalshape iagoac@ic.unicamp.br}}
 \thanks[fox]{Twenty Century Fox, Springfield, USA \\ Email:
 \texttt{\normalshape homer@thesimpsons.com}}
 
